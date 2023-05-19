@@ -154,28 +154,53 @@
     padding-left: 25px;
     height: auto;
   }
-  .Presentacion{
+
+  .container{
+    width: min(100% - 30px, 840px);
+    margin-inline: auto;
+  }
+
+.Presentacion{
     width: 100%;
-    display: flex;
+    display: grid;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     background-color: #222831;
     height: 500px;
 }
 
-.caja-presentacion{
-    background-color: #EEEEEE;
-    margin-top: 10%;
-    width: auto;
-    flex-direction: row;
-    border-radius: 20px;
-    justify-content: center;
-    align-items: center;
-    height: 40%;
-    overflow: hidden;
+.Presentacion h2{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: left;
+  padding: 10px;
 }
 
-.Aptitudes{
+.Presentacion .container{
+  background-color: #ddd;
+  border-radius: 25px;
+  display: grid;
+  place-items: center;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+  background-image: url(backgorund-1.jpg);
+}
+
+
+
+.txtPresentacion{
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ text-align: left;
+ display: grid;
+ padding: 20px;
+}
+
+.imagen{
+  grid-row: span 2;
+  width: 25%;
+}
+
+ .Aptitudes{
   width: 100%;
   height: 500px;
   display: flex;
@@ -185,33 +210,8 @@
   background-color: #EEEEEE;
 }
 
-.caja-aptitudes{
-  display: flex;
-  flex-direction: row;
-  background-color: #393E46;
-  border-radius: 20px;
-  width: 50%;
-  height:max-content;
-}
 
-.txtPresentacion{
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  text-align: left;
-  padding: 20px;
-}
 
-.caja-imagen{
-  display: flex;
-  flex-direction: column;
-  justify-content:first baseline;
-  align-items:center;
-  width: 30%;
-  padding-right: 10px;
-  padding-top: 20px;
-  border-top-left-radius: 20px;
-  background-color: #222831;
-  height: max-content;
-}
 
 
 
@@ -227,15 +227,17 @@ th{
   padding: 50px;
   width:70%
 }
-#alignment{
-  margin-left: auto;
-  margin-right: auto;
-
-}
 
 .logos img{
   width: 10%;
   aspect-ratio: 4/3;
   object-fit: contain;
   mix-blend-mode: color-burn;
+}
+
+
+#alignment{
+  margin-left: auto;
+  margin-right: auto;
+
 }
