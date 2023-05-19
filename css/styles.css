@@ -166,7 +166,7 @@
 .caja-presentacion{
     background-color: #EEEEEE;
     margin-top: 10%;
-    width: 25%;
+    width: auto;
     flex-direction: row;
     border-radius: 20px;
     justify-content: center;
