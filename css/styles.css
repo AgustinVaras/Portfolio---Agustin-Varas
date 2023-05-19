@@ -168,6 +168,7 @@
     align-items: center;
     background-color: #222831;
     height: 500px;
+    
 }
 
 .Presentacion h2{
@@ -182,22 +183,35 @@
   display: grid;
   place-items: center;
   grid-template-columns: auto auto auto;
-  gap: 20px;
-  background-image: url(backgorund-1.jpg);
+  
+  overflow: hidden;
+}  
+
+.background{
+  backdrop-filter: url(commonfilters.svg#filter);
+  background-image: url("../img/background-1.jpg");
+  backdrop-filter:blur(500px);
+  
 }
 
-
-
 .txtPresentacion{
- font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
- text-align: left;
- display: grid;
- padding: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: whitesmoke;
+  text-align: left;
+  display: grid;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  
+  color: #fff;
+  height: 100%;
 }
 
 .imagen{
   grid-row: span 2;
-  width: 25%;
+  width: 100px;
+  height: 100%;
+  opacity: 0;
+  
 }
 
  .Aptitudes{
